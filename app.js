@@ -6,6 +6,8 @@ app.use(express.json());
 // TODO: configure cors
 app.use(cors());
 
-// TODO: add your routes here
+app.post('/signup', (request, response) => {
+  response.send(request.body);
+});
 
 module.exports = app;
